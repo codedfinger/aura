@@ -73,7 +73,7 @@ const Proposal = ({ className = '' }) => {
                         <div className="proposal_content py-5">
                             <div className="proposal_header">
                                 <h1 className="proposal_title h4">
-                                    Hey <b>{person}</b>
+                                    Hey <b>Esther</b>
                                 </h1>
                             </div>
 
