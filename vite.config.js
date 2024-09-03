@@ -9,7 +9,7 @@ export default defineConfig(({ command, mode }) => {
     const env = loadEnv(mode, process.cwd());
 
     return {
-        base: 'https://codedfinger.github.io/aura/',
+        base: '/aura/',
         plugins: [
             react(),
             createHtmlPlugin({
