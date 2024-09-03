@@ -1,12 +1,15 @@
 {
   "name": "propose",
   "version": "2.0",
+  "homepage": "https://codedfinger.github.io/react-gh-pages",
   "license": "MIT",
   "author": {
     "name": "Tonmoy Deb",
     "email": "tonmoydeb404@gamil.com"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
@@ -32,6 +35,7 @@
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "gh-pages": "^6.1.1",
     "prettier": "^3.3.3",
     "vite": "^2.9.18",
     "vite-plugin-html": "^3.2.0"
