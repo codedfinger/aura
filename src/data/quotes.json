@@ -1,0 +1,32 @@
+{
+  "qoutes": [
+    {
+      "id": "Q5",
+      "text": "Life with you has been an incredible journey, and I know in my heart that I want to keep walking this path with you, through all the highs and lows, the joys and challenges.",
+      "image": "https://res.cloudinary.com/codedfingers/image/upload/v1725282809/propose/13b7ef97-1543-44cf-b55b-b8ab8751b14c_2_c4ijjk.jpg"
+    },
+    {
+      "id": "Q4",
+      "text": "I cannot imagine a future that doesn't include your laughter, your kindness, and your unwavering support",
+      "image": "https://res.cloudinary.com/codedfingers/image/upload/v1725398312/propose/IMG_2303_qwklrn.jpg"
+    },
+    
+    {
+      "id": "Q3",
+      "text": "Every moment with you has been a beautiful journey, and with every step, my heart has found its true home in you",
+      "image": "https://res.cloudinary.com/codedfingers/image/upload/v1725398310/propose/IMG_2316_eoaojk.jpg"
+
+    },
+    {
+      "id": "Q2",
+      "text": "I want to continue this adventure with you by my side",
+      "image": "https://res.cloudinary.com/codedfingers/image/upload/v1725284841/propose/df82ad13-3934-4fe3-83a8-00d044baa19a_xfmu2u.jpg"
+    }
+  ],
+  "propose": {
+    "id": "finished",
+    "text": "Life is unpredictable, full of twists and turns, and while I may not know what the future holds, there is one thing I am absolutely certain of: my love for you. It’s a love that has grown stronger with each passing day, and it’s a love that I want to cherish for the rest of my life.",
+    "subtext": "Please marry me, will you?",
+    "image": "/images/image-04.webp"
+  }
+}
