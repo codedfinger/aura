@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import GenQoutes from '../components/GenQoutes';
@@ -15,8 +15,9 @@ const Proposal = ({ className = '' }) => {
         subtext: '',
     });
     const [currentIndex, setCurrentIndex] = useState(0);
+    const audioRef = useRef(null);
 
-    // add quotes
+    // Add quotes
     const addQuotes = () => {
         let nextQuote;
         if (currentIndex < qoutes.length) {
@@ -30,28 +31,32 @@ const Proposal = ({ className = '' }) => {
         setCurrentIndex((prevIndex) => prevIndex + 1);
     };
 
-    // handle click
+    // Handle click
     const handleClick = (e) => {
         const button = e.target;
-        // remove previous shaking effect
+        // Remove previous shaking effect
         button.classList.remove('shake');
-        // add quote
+        // Add quote
         addQuotes();
-        // add shaking effect
+        // Add shaking effect
         button.classList.add('shake');
-        // remove shaking effect
+        // Remove shaking effect
         setTimeout(() => {
             button.classList.remove('shake');
         }, 1000);
-    };
-    
 
-    // effects
+        // Play audio on button click
+        if (audioRef.current) {
+            audioRef.current.play().catch((error) => console.log('Error playing audio:', error));
+        }
+    };
+
+    // Effects
     useEffect(() => {
         document.title = `${person} - Be My Wife`;
     }, [person]);
 
-    // preload images
+    // Preload images
     useEffect(() => {
         images.forEach((image) => {
             const img = new Image();
@@ -91,6 +96,8 @@ const Proposal = ({ className = '' }) => {
                     </Col>
                 </Row>
             </Container>
+            {/* Replace with your Cloudinary audio URL */}
+            <audio ref={audioRef} src="https://res.cloudinary.com/codedfingers/video/upload/v1725462064/marry_you_yyuyek.mp3" loop />
         </div>
     );
 };
